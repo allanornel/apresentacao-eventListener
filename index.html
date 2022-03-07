@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POC - Event Listener</title>
+  </head>
+  <body>
+    <!-- Evento In-LINE -->
+    <button onclick="bgChange()">Press me</button>
+
+    <!-- <button>Press me</button> -->
+  </body>
+  <script>
+    function bgChange() {
+      var rndCol =
+        "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+      document.body.style.backgroundColor = rndCol;
+    }
+
+    // var btn = document.querySelector("button");
+    // //  Manipulador de Eventos do JS
+    // btn.onclick = function () {
+    //   var rndCol =
+    //     "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+    //   document.body.style.backgroundColor = rndCol;
+    // };
+
+    // // Event Listener
+    // function bgChange() {
+    //   var rndCol =
+    //     "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+    //   document.body.style.backgroundColor = rndCol;
+    // }
+
+    // btn.addEventListener("click", bgChange);
+
+    function random(number) {
+      return Math.floor(Math.random() * number);
+    }
+  </script>
+</html>
