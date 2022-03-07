@@ -8,18 +8,18 @@
   </head>
   <body>
     <!-- Evento In-LINE -->
-    <button onclick="bgChange()">Press me</button>
+    <!-- <button onclick="bgChange()">Press me</button> -->
 
-    <!-- <button>Press me</button> -->
+    <button>Press me</button>
   </body>
   <script>
-    function bgChange() {
-      var rndCol =
-        "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
-      document.body.style.backgroundColor = rndCol;
-    }
+    // function bgChange() {
+    //   var rndCol =
+    //     "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+    //   document.body.style.backgroundColor = rndCol;
+    // }
 
-    // var btn = document.querySelector("button");
+    var btn = document.querySelector("button");
     // //  Manipulador de Eventos do JS
     // btn.onclick = function () {
     //   var rndCol =
@@ -27,14 +27,14 @@
     //   document.body.style.backgroundColor = rndCol;
     // };
 
-    // // Event Listener
-    // function bgChange() {
-    //   var rndCol =
-    //     "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
-    //   document.body.style.backgroundColor = rndCol;
-    // }
+    // Event Listener
+    function bgChange() {
+      var rndCol =
+        "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+      document.body.style.backgroundColor = rndCol;
+    }
 
-    // btn.addEventListener("click", bgChange);
+    btn.addEventListener("click", bgChange);
 
     function random(number) {
       return Math.floor(Math.random() * number);
